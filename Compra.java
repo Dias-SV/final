@@ -35,7 +35,7 @@ public class Compra {
     public void mostrarCompra() {
         System.out.println("Fecha: " + fecha);
         System.out.println("Medicamento: " + medicamento);
-        System.out.println("Concentracion: " + medicamento.getConcentracion());
+        System.out.println("Concentracion: " + medicamento.getFicha().getConcentracion());
         System.out.println("Cantidad de cajas: " + cantidadCajas);
     }
 }
