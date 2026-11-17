@@ -3,7 +3,7 @@ public class Cliente{
     private String apellido;
     private String correo;
     private long telefono;
-    private int id;
+    private int id; //Prob lo quite
     private Direccion direccion;
  
     public Cliente(String nombre, String apellido, String correo, long telefono, int id) {
@@ -12,6 +12,15 @@ public class Cliente{
         this.correo = correo;
         this.telefono = telefono;
         this.id = id;
+    }
+
+    public Cliente(String nombre, String apellido, String correo, long telefono, int id, Direccion direccion) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.correo = correo;
+        this.telefono = telefono;
+        this.id = id;
+        this.direccion = direccion;
     }
 
     public String getNombre() {
@@ -60,6 +69,10 @@ public class Cliente{
 
     public Direccion getDireccion() {
         return direccion;
+    }
+
+    public void setDireccion(Direccion direccion) {
+        this.direccion = direccion;
     }
 
     public void mostrarDatos() {
