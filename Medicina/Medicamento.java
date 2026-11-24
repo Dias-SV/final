@@ -7,15 +7,15 @@ public class Medicamento{
     private int stock;
 
     public Medicamento(String nombre, Ficha ficha, Double precio){
-        this.nombre=nombre;
-        this.ficha=ficha;
-        this.precio=precio;
+        this.nombre = nombre;
+        this.ficha = ficha;
+        this.precio = precio;
     }
 
-    public Ficha getFicha() {
+    public Ficha getFicha(){
         return ficha;
     }
-    public void setFicha(Ficha ficha) {
+    public void setFicha(Ficha ficha){
         this.ficha = ficha;
     }
 
@@ -33,16 +33,23 @@ public class Medicamento{
         this.precio = precio;
     }
 
+    public int getStock() {
+        return stock;
+    }
+    public void setStock(int stock) {
+        this.stock = stock;
+    }
+    
     public void reabastecer(int cantidad){
-        this.stock+=cantidad;
+        this.stock += cantidad;
     }
 
     public void venderCantidad(int cantidad){
-        if(cantidad>this.stock){
+        if(cantidad > this.stock){
             System.out.println("No hay suficiente producto para esa venta");
-        } else{
+        }else{
             stock-=cantidad;
-            System.out.println("Se restaron "+cantidad+" unidades de " + nombre);
+            System.out.println("Se restaron "+cantidad+" unidades de ");
         }
     }
 
