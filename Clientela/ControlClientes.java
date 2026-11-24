@@ -1,3 +1,5 @@
+package Clientela;
+
 import java.util.HashMap;
 
 public class ControlClientes{

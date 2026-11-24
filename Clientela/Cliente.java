@@ -1,3 +1,5 @@
+package Clientela;
+
 public class Cliente{
     private String nombre;
     private String apellido;
