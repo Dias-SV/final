@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import Medicina.Medicamento;
 
 public class Compra {
     private LocalDate fecha;
