@@ -1,3 +1,5 @@
+package Clientela;
+
 public class Direccion {
     
     String calle;
