@@ -3,8 +3,7 @@ package Stock;
 import java.util.HashMap;
 import java.io.*;
 import java.nio.file.NoSuchFileException;
-
-import Medicina.EscrituraCSV;
+import Medicina.EscrituraCSVMedicina;
 import Medicina.Medicamento;
 
 public class Inventario {
@@ -12,7 +11,7 @@ public class Inventario {
 
     static{
         try {
-            medicinas = EscrituraCSV.cargar("archivo.csv");
+            medicinas = EscrituraCSVMedicina.cargar("archivo.csv");
             System.out.println("Se cargaron las medicinas correctamente");
         } catch (NoSuchFileException e) {
             System.out.println("El archivo no existe todavía, se empieza con inventario vacío.");
