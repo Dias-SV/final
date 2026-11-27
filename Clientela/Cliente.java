@@ -5,23 +5,20 @@ public class Cliente{
     private String apellido;
     private String correo;
     private long telefono;
-    private int id; //Prob lo quite
     private Direccion direccion;
  
-    public Cliente(String nombre, String apellido, String correo, long telefono, int id) {
+    public Cliente(String nombre, String apellido, String correo, long telefono) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.correo = correo;
         this.telefono = telefono;
-        this.id = id;
     }
 
-    public Cliente(String nombre, String apellido, String correo, long telefono, int id, Direccion direccion) {
+    public Cliente(String nombre, String apellido, String correo, long telefono, Direccion direccion) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.correo = correo;
         this.telefono = telefono;
-        this.id = id;
         this.direccion = direccion;
     }
 
@@ -61,14 +58,6 @@ public class Cliente{
         this.telefono = telefono;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public Direccion getDireccion() {
         return direccion;
     }
@@ -85,7 +74,6 @@ public class Cliente{
             System.out.println("Direccion: ");
             direccion.mostrarDomicilio();
         }
-        System.out.println("ID: " + id);
     }
 
 }
