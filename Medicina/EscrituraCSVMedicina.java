@@ -4,7 +4,7 @@ import java.io.*;
 import java.nio.file.*;
 import java.util.*;
 
-public class EscrituraCSV {
+public class EscrituraCSVMedicina {
 
     public static void guardar(HashMap<String, Medicamento> tabla, String ruta) throws IOException {
         try (BufferedWriter bw = Files.newBufferedWriter(Paths.get(ruta))) {
@@ -24,7 +24,6 @@ public class EscrituraCSV {
         }
     }
 
-    // ---------- CARGAR ----------
     public static HashMap<String, Medicamento> cargar(String ruta) throws IOException {
         HashMap<String, Medicamento> tabla = new HashMap<>();
         List<String> lineas = Files.readAllLines(Paths.get(ruta));
